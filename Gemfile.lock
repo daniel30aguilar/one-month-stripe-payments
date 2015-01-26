@@ -50,6 +50,8 @@ GEM
     erubis (2.7.0)
     execjs (2.2.2)
     ffi (1.9.6-x86-mingw32)
+    figaro (1.0.0)
+      thor (~> 0.14)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.2.6)
@@ -134,6 +136,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
+  figaro
   jbuilder (~> 2.0)
   jquery-rails
   pg
