@@ -6,14 +6,14 @@
 	    <p><strong>RECEIPT</strong></p>
 	    <div id="receipt-details" class="row clearfix">
 	      <div class="col-sm-8 receipt-left">
-	        <p><strong class="font-weight-heavy">Growth Hacking</strong><br/> <span class="font-weight-light">Crash Course</span></p>
+	        <p><strong class="font-weight-heavy"><%= @product.title %></strong><br/> <span class="font-weight-light"><%= @product.subtitle %></span></p>
 	      </div>
 	      <div class="col-sm-4">
-	        $4.99
+	        $<%= @product.price %>
 	      </div>
 	    </div>
 
-	    <a href="https://s3.amazonaws.com/one-month-stripe-payments-das/Daniel_Aguilar_Santos_Resume.pdf"><button type="button" class="btn btn-success btn-xs">DOWNLOAD</button></a>
+	    <a href="<%= @product.download_url %>"><button type="button" class="btn btn-success btn-xs">DOWNLOAD</button></a>
 	    <footer id="receipt-footer">
 	      <small>Your purchase is complete. We hope you enjoy it!</small>
 	    </footer>
