@@ -33,7 +33,7 @@ ul.no-indent {
 /* SHARED PAGE STYLES */
 
 body {
-    background: url('<%= asset_path 'site-bg.gif' %>') #353433;
+    background: url('<%= asset_path '' %>') #262626;
     background-size: 25%;
     font-family: 'Open Sans', sans-serif;
 }
@@ -132,15 +132,15 @@ body {
 
 #content-receipt {
     background: #eee;
-    height: 400px;
+    height: 970px;
     width: 100%;
     margin: 0;
-    position:  relative;
+    position:  relative;    
 }
 
 #receipt-container {
-    position: relative;
-    width: 50%;
+    position: ;
+    width: 100%;
     height: 75%;
     background: white;
     margin: -20px auto 0 auto;
@@ -173,6 +173,7 @@ body {
     padding: 15px 15%;
     width: 100%;
     color: #666;
+
 }
 
 #receipt-title {
@@ -182,17 +183,7 @@ body {
     margin-bottom: 10px;
 }
 
-#receipt-shadow {
-    position: absolute;
-    width: 60%;
-    height: 20px;
-    border-radius: 20px;
-    background: #666;
-    left: 50%;
-    -webkit-transform: translate(-50%,-15px);
-    transform: translate(-50%,-15px);
-    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-}
+
 
 #receipt-footer {
     padding-top: 15px;

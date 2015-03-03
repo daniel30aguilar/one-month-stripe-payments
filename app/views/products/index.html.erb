@@ -3,8 +3,9 @@
 <% end %>
 
 
-<article id="details-article" class="col-sm-8">
-        <h1 id="article-title">Our Courses</h1>
+<article id="details-article" class="col-sm-12">
+        <h1 id="article-title">Edu Real,<span class="font-weight-light"> la mejor Educación para tu Empresa.</span></h1>
+        
 </article>
 
 <section id="products">
@@ -13,7 +14,7 @@
 		 <a href="<%=product_path(product) %>">
 		  <div class="product-image-container">
 		   <img src="<%= asset_path product.thumbnail_image_name %>" alt="<%= product.title %>"/>
-		   <span class="product-price">$<%=product.price %></span>
+		   
 		 </div>
 		 <p class="product-title"><%= product.title %></p></a>
 		</div>

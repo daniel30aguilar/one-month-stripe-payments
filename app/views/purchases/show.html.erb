@@ -1,24 +1,23 @@
 <% content_for :head do %>
-	<%= image_tag('header-image.jpg',id: 'content-header-img', alt: 'Thank you for purchasing') %>
+	<%= image_tag('',id: 'content-header-img', alt: 'Thank you for purchasing') %>
 <% end %>
 
 <section id="content-receipt" class="clearfix">
 	<div id="receipt-container">
 		<div class="dotmatrix left"></div>
 		<div id="receipt-content">
-			<h4 id="receipt-title">Thank You!</h4>
-			<p><strong>RECEIPT</strong></p>
+			<h4 id="receipt-title">Gracias!</h4>
+				
 			<div id="receipt-details" class="row clearfix">
 				<div class="col-sm-8 receipt-left">
 					<p><strong class="font-weight-heavy"><%= @product.title %></strong><br/> <span class="font-weight-light"><%= @product.subtitle %></span></p>
-				</div>
-				<div class="col-sm-4">
-					$<%= @product.price %>
-				</div>
+				</div>				
 			</div>
-			<a href="<%= @product.download_url %>"><button type="button" class="btn btn-success btn-xs">DOWNLOAD</button></a>
+			<div class="video">
+			<iframe src="//player.vimeo.com/video/100357654" width="500" height="228" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div> 
 			<footer id="receipt-footer">
-				<small>Your purchase is complete. We hope you enjoy it!</small>
+				<small>"Edu Real" La educación que necesitan las start up's, pequeña y mediana empresa.!</small>
 			</footer>
 		</div>
 		<div class="dotmatrix right"></div>
